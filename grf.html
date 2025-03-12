@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos - Scrum</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        canvas {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        h1 {
+            color: #FF6600;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ff6600;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ff3300;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gráficos de Scrum</h1>
+
+        <!-- Canvas para o gráfico -->
+        <canvas id="grafico" width="400" height="400"></canvas>
+
+        <!-- Botão para voltar -->
+        <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos - Scrum</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        canvas {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        h1 {
+            color: #FF6600;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ff6600;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ff3300;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">Voltar à Página Principal</a>
+    <div class="container">
+       
+
+        <!-- Canvas para o gráfico -->
+        <canvas id="grafico" width="400" height="400"></canvas>
+
+        <!-- Botão para voltar -->
+       
+    </div>
+
+    <script>
+        var ctx = document.getElementById('grafico').getContext('2d');
+        var grafico = new Chart(ctx, {
+            type: 'bar', // Tipo de gráfico: barras
+            data: {
+                labels: ['Sprint 1', 'Sprint 2', 'Sprint 3', 'Sprint 4'], // Rótulos dos sprints
+                datasets: [{
+                    label: 'Pontuação de Produtividade por Sprint',
+                    data: [65, 59, 80, 81], // Exemplo de dados de produtividade
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
